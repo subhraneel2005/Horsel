@@ -69,4 +69,48 @@ body{
     font-weight: 500;
     line-height: 89.28px;
   }
+
+  .bookBox1{
+    background: #F5E8E1;
+    width: 477px;
+    height: 228px;
+    border-radius: 5px;
+  }
+
+  .bookBox2{
+    background: #F5E8E1;
+    width: 477px;
+    height: 228px;
+    border-radius: 5px;
+  }
+
+  .bookBox3{
+    background: #F5E8E1;
+    width: 477px;
+    height: 523px;
+    border-radius: 5px;
+  }
+
+  .bookBox4{
+    background: #F5E8E1;
+    width: 477px;
+    height: 523px;
+    border-radius: 5px;
+  }
+
+  .smallBox{
+    background: #C0713E;
+    width: 200px;
+    height: 55px;
+    padding: 6px;
+    color: white;
+  }
+
+  .subHeadings{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Syne', sans-serif;
+    line-height: 38.4px;
+    
+  }
   
