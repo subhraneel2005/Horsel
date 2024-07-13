@@ -1,11 +1,11 @@
 import React from 'react'
-import AppBar from './AppBar'
 import CenteredTextWithVideo from './CenteredTextWithVIdeo'
+import Navbarr from './Navbarr'
 
 function Herosection() {
   return (
     <div className="min-h-screen w-full relative">
-    <AppBar/>
+    <Navbarr/>
     <CenteredTextWithVideo/>
     </div>
   )

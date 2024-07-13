@@ -9,10 +9,14 @@ function App() {
 
   return (
    
-    <>
-    <Herosection/>
-    <BookNow/> 
-    </>
+    <div className=""> 
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Herosection />} />
+        <Route path="/booknow" element={<BookNow />} />
+      </Routes>
+    </BrowserRouter>
+    </div>
    
   )
 }

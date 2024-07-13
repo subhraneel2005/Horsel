@@ -13,8 +13,8 @@ function BookNow() {
         { time: "11:00 PM" }
     ]
   return (
-    <div className='min-h-screen w-full font-[Syne] booknow'>
-        <h1 className='py-14 mt-32 font-[Harmony] text-[72px] font-[500] leading-[80px] text-center'>Booking Page</h1>
+    <div className='min-h-screen w-full font-[Syne] flex justify-center items-center booknow flex-col'>
+        <h1 className='py-14 font-[Harmony] text-[72px] font-[500] leading-[80px] text-center'>Booking Page</h1>
         <div className='w-full h-full flex justify-center items-center'>
         <div className='grid grid-cols-1 md:grid-cols-2 px-4 py-10 gap-6'>
             <div className='shadow-lg bookBox1 flex flex-col justify-center items-center'>
