@@ -15,24 +15,30 @@
     width: 477px;
     height: 228px;
     border-radius: 5px;
+    align-self: center;
+  justify-self: center;
   }
   .bookBox2{
     background: #F5E8E1;
     width: 477px;
     height: 228px;
     border-radius: 5px;
+    align-self: center;
+  justify-self: center;
   }
   .bookBox3{
     background: #F5E8E1;
     width: 477px;
     height: 523px;
     border-radius: 5px;
+    align-self: center;
+  justify-self: center;
   }
   .bookButton{
     background: #8B4513;
     width: 477px;
     height: 60px;
-    border-radius: 10px;
+    border-radius: 5px;
   }
   .bookBox4{
     background: #F5E8E1;
@@ -58,3 +64,23 @@
     line-height: 38.4px;
 
   }
+
+  /* Mobile styles (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+  .bookBox1, .bookBox2, .bookBox3, .bookBox4 {
+    width: 90%; /* adjust width to 90% of screen width */
+    padding: 10px; /* adjust height to auto */
+    padding-bottom: 6px;
+  }
+  .smallBox {
+    width: 130px;
+    height: 55px;
+  }
+  .bookButton{
+    width: 90%;
+  }
+}
+
+.wrapper{
+  margin: auto;
+}

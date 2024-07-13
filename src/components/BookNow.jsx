@@ -4,9 +4,12 @@ import { DemoContainer, DemoItem } from '@mui/x-date-pickers/internals/demo';
 import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
 import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
 import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
-
+import { useUser } from "@clerk/clerk-react";
+import { SignInButton } from "@clerk/clerk-react";
 
 function BookNow() {
+
+    const {user} = useUser();
 
     const [value, setValue] = React.useState(dayjs('2022-04-17'));
 
@@ -21,8 +24,18 @@ function BookNow() {
         { time: "10:00 PM" },
         { time: "11:00 PM" }
     ]
+    if(!user){
+        return(
+            <div className='booknow min-h-screen w-full flex justify-center items-center flex-col space-y-7'>
+            <h1 className='text-7xl font-[Syne]'>Not logged in</h1>
+            <SignInButton>
+            <button className='font-[Harmony] bg-black text-white bg-opacity-70 px-7 py-3 rounded-lg'>Login</button>
+            </SignInButton>
+        </div>
+        )
+    }
   return (
-    <div className='min-h-screen w-full font-[Syne] flex justify-center items-center booknow flex-col'>
+    <div className='select-none min-h-screen overflow-hidden font-[Syne] flex justify-center items-center booknow flex-col'>
         <h1 className='py-14 font-[Harmony] text-[72px] font-[500] leading-[80px] text-center'>Booking Page</h1>
         <div className='w-full h-full flex justify-center items-center'>
         <div className='grid grid-cols-1 md:grid-cols-2 px-4 py-10 gap-6'>
@@ -67,13 +80,13 @@ function BookNow() {
             <div className='bookBox3 shadow-lg flex justify-center items-center'>
             <LocalizationProvider dateAdapter={AdapterDayjs}>
             <DemoContainer components={['DateCalendar', 'DateCalendar']}>
-                <DemoItem label="Controlled calendar">
+                <DemoItem>
                 <DateCalendar value={value} onChange={(newValue) => setValue(newValue)} />
                 </DemoItem>
             </DemoContainer>
             </LocalizationProvider>
             </div>
-            <div className='block'>
+            <div className='flex flex-col justify-center items-center'>
                 <div className='bookBox4 shadow-lg flex flex-col justify-center items-center'>
                 <h2 className='subHeadings w-full mb-5 px-7'>Select Slot</h2>
                     <div className='grid grid-cols-3 gap-6'>
