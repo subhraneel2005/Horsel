@@ -1,5 +1,14 @@
 import React from 'react'
+import dayjs from 'dayjs';
+import { DemoContainer, DemoItem } from '@mui/x-date-pickers/internals/demo';
+import { AdapterDayjs } from '@mui/x-date-pickers/AdapterDayjs';
+import { LocalizationProvider } from '@mui/x-date-pickers/LocalizationProvider';
+import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
+
+
 function BookNow() {
+
+    const [value, setValue] = React.useState(dayjs('2022-04-17'));
 
     const times = [
         { time: "3:00 PM" },
@@ -55,7 +64,14 @@ function BookNow() {
                 </div>
 
             </div>
-            <div className='bookBox3 shadow-lg'>
+            <div className='bookBox3 shadow-lg flex justify-center items-center'>
+            <LocalizationProvider dateAdapter={AdapterDayjs}>
+            <DemoContainer components={['DateCalendar', 'DateCalendar']}>
+                <DemoItem label="Controlled calendar">
+                <DateCalendar value={value} onChange={(newValue) => setValue(newValue)} />
+                </DemoItem>
+            </DemoContainer>
+            </LocalizationProvider>
             </div>
             <div className='block'>
                 <div className='bookBox4 shadow-lg flex flex-col justify-center items-center'>
