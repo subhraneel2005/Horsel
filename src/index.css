@@ -59,17 +59,14 @@ body{
     line-height: 24px;
 }
 
-body {
-    cursor: none; /* Hide the default cursor */
+  .booknow{
+    background: #F5F5F5;
   }
-  
-  .custom-cursor {
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: black;
-    pointer-events: none; /* Ensure the cursor does not interfere with click events */
-    z-index: 9999; /* Ensure the cursor stays on top of other elements */
+
+  .bookHeroText{
+    font-size: 72px;
+    font-family: 'Harmony', sans-serif;
+    font-weight: 500;
+    line-height: 89.28px;
   }
   
