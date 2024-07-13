@@ -10,10 +10,25 @@ function BookNow() {
                 <h2 className='subHeadings w-full mb-5 px-7'>Selected Horse</h2>
 
                 <div className='grid grid-cols-2 gap-4'>
-                <div className='rounded-lg smallBox flex justify-center items-center'>Horse1</div>
-                <div className='rounded-lg smallBox flex justify-center items-center'>Horse2</div>
-                <div className='rounded-lg smallBox flex justify-center items-center'>Horse3</div>
-                <div className='rounded-lg smallBox flex justify-center items-center'>Horse4</div>
+                    <label className='rounded-lg gap-2 smallBox flex justify-center items-center'>
+                    <input type='radio' name='horse'/>
+                    <span>Horse1</span>
+                    </label>
+                    
+                    <label className='rounded-lg gap-2 smallBox flex justify-center items-center'>
+                    <input type='radio' name='horse'/>
+                    <span>Horse2</span>
+                    </label>
+                    
+                    <label className='rounded-lg smallBox gap-2 flex justify-center items-center'>
+                    <input type='radio' name='horse'/>
+                    <span>Horse3</span>
+                    </label>
+
+                    <label className='rounded-lg smallBox gap-2 flex justify-center items-center'>
+                    <input type='radio' name='horse'/>
+                    <span>Horse4</span>
+                    </label>
                 </div>
 
             </div>
@@ -22,10 +37,10 @@ function BookNow() {
                 <h2 className='subHeadings w-full mb-5 px-7'>Personal Info</h2>
 
                 <div className='grid grid-cols-2 gap-4'>
-                <div className='rounded-lg smallBox flex justify-center items-center'>Name</div>
-                <div className='rounded-lg smallBox flex justify-center items-center'>Email</div>
-                <div className='rounded-lg smallBox flex justify-center items-center'>Phone No.</div>
-                <div className='rounded-lg smallBox flex justify-center items-center'>Alternate Phone No.</div>
+                <input type='text' className='rounded-lg outline-none border-none smallBox flex px-3 justify-center items-center' placeholder='Name'/>
+                <input type='text' className='rounded-lg px-3 smallBox outline-none border-none flex justify-center items-center' placeholder='Email'/>
+                <input type='text' className='rounded-lg px-3 smallBox flex justify-center outline-none border-none items-center' placeholder='Phone No.'/>
+                <input type='text' className='px-3 outline-none border-none rounded-lg smallBox flex justify-center items-center'placeholder='Alternate Phone No.'/>
                 </div>
 
             </div>
