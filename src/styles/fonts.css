@@ -1,0 +1,14 @@
+@font-face {
+    font-family: 'Harmony';
+    src: url('/fonts/harmony.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Syne';
+    src: url('/fonts/syne.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  

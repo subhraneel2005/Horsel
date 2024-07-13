@@ -1,68 +1,60 @@
-:root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+@import url('https://fonts.googleapis.com/css2?family=Syne&display=swap');
+@import url('./styles/fonts.css');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body{
+    font-family: "Syne", sans-serif;
+  font-optical-sizing: auto;
   font-weight: 400;
+  font-style: normal;
 
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
-a {
-  font-weight: 500;
-  color: #646cff;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.heroNavText{
+    font-size: 36px;
+    font-family: 'Harmony', sans-serif;
+    font-weight: 500;
+    line-height: 44.64px;
 }
 
-body {
-  margin: 0;
-  display: flex;
-  place-items: center;
-  min-width: 320px;
-  min-height: 100vh;
+
+.heroNavLogin{
+    font-size: 32px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+    line-height: 38.4px;
 }
 
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
+.heroText{
+    font-size: 152px;
+    font-family: 'Harmony', sans-serif;
+    font-weight: 500;
+    line-height: 188.48px;
+    letter-spacing: 30.4px;
 }
 
-button {
-  border-radius: 8px;
-  border: 1px solid transparent;
-  padding: 0.6em 1.2em;
-  font-size: 1em;
-  font-weight: 500;
-  font-family: inherit;
-  background-color: #1a1a1a;
-  cursor: pointer;
-  transition: border-color 0.25s;
-}
-button:hover {
-  border-color: #646cff;
-}
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
+@media (max-width: 768px) {
+    .heroText {
+      font-size: 100px; /* Adjust font size for smaller screens */
+      letter-spacing: 20px; /* Adjust letter spacing for smaller screens */
+      line-height: 1.2; /* Optionally adjust line height for smaller screens */
+    }
   }
-  a:hover {
-    color: #747bff;
+  
+  @media (max-width: 480px) {
+    .heroText {
+      font-size: 84px; /* Further adjust font size for mobile screens */
+      letter-spacing: 12px; /* Further adjust letter spacing for mobile screens */
+      line-height: 1.2; /* Optionally adjust line height for mobile screens */
+    }
   }
-  button {
-    background-color: #f9f9f9;
-  }
+
+.ptext{
+    font-size: 20px;
+    font-family: 'Syne', sans-serif;
+    font-weight: 400;
+    line-height: 24px;
 }
