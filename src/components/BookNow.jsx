@@ -3,7 +3,7 @@ import React from 'react'
 function BookNow() {
   return (
     <div className='booknow min-h-screen h-full'>
-        <h1 className='py-7 bookHeroText text-center'>Booking Page</h1>
+        <h1 className='py-14 mt-32 bookHeroText text-center'>Booking Page</h1>
         <div className='w-full h-full flex justify-center items-center'>
         <div className='grid grid-cols-1 md:grid-cols-2 px-4 gap-6'>
             <div className='shadow-lg bookBox1 flex flex-col justify-center items-center'>
