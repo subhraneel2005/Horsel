@@ -1,15 +1,19 @@
-import BookNow from "./components/BookNow"
-import Herosection from "./components/Herosection"
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Herosection from "./components/Herosection";
+import BookNow from "./components/BookNow";
 
 
 function App() {
 
 
   return (
-   <div className="select-none">
+   
+    <>
     <Herosection/>
-    <BookNow/>
-   </div>
+    <BookNow/> 
+    </>
+   
   )
 }
 

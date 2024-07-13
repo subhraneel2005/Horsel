@@ -4,3 +4,63 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+.main-content {
+  position: relative;
+  z-index: 1; /* Ensure content is above the video */
+  width: 100%;
+  height: 100%;
+}
+
+.booknow{
+    background: #F5F5F5;
+  }
+  .bookBox1{
+    background: #F5E8E1;
+    width: 477px;
+    height: 228px;
+    border-radius: 5px;
+  }
+  .bookBox2{
+    background: #F5E8E1;
+    width: 477px;
+    height: 228px;
+    border-radius: 5px;
+  }
+  .bookBox3{
+    background: #F5E8E1;
+    width: 477px;
+    height: 523px;
+    border-radius: 5px;
+  }
+  .bookButton{
+    background: #8B4513;
+    width: 477px;
+    height: 60px;
+    border-radius: 10px;
+  }
+  .bookBox4{
+    background: #F5E8E1;
+    width: 477px;
+    height: 423px;
+    border-radius: 5px;
+  }
+  .smallBox{
+    background: #C0713E;
+    width: 200px;
+    height: 55px;
+    padding: 6px;
+    color: white;
+  }
+
+  .smallBox::placeholder{
+    color: white;
+  }
+  .subHeadings{
+    font-size: 32px;
+    font-weight: 500;
+    font-family: 'Syne', sans-serif;
+    line-height: 38.4px;
+
+  }
