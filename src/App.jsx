@@ -5,9 +5,9 @@ function App() {
 
 
   return (
-   <>
+   <div className="select-none">
     <Herosection/>
-   </>
+   </div>
   )
 }
 

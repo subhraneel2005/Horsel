@@ -58,3 +58,18 @@ body{
     font-weight: 400;
     line-height: 24px;
 }
+
+body {
+    cursor: none; /* Hide the default cursor */
+  }
+  
+  .custom-cursor {
+    position: fixed;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: black;
+    pointer-events: none; /* Ensure the cursor does not interfere with click events */
+    z-index: 9999; /* Ensure the cursor stays on top of other elements */
+  }
+  
