@@ -1,6 +1,7 @@
 import React from 'react';
 import '../styles/Center.css';
 import { useNavigate } from "react-router-dom";
+import BestOnes from './BestOnes';
 
 const CenteredTextWithVideo = () => {
 
