@@ -82,3 +82,13 @@
 .wrapper{
   margin: auto;
 }
+
+
+.bestOnes{
+  background: #faf3f0;
+}
+
+.bestOnes h1{
+  font-weight: 500;
+  line-height: 80px;
+}

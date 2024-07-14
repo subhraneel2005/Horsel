@@ -17,14 +17,17 @@ function Navbarr() {
         {/* <li className='text-3xl font-[Syne] text-white cursor-pointer'>Login</li> */}
         <SignedOut>
           <SignInButton>
-          <li className='text-3xl font-[Syne] text-white cursor-pointer'>Login</li>
+          <li className='text-3xl font-[Syne] text-white cursor-pointer'>Log In</li>
           </SignInButton>
         </SignedOut>
         <SignedIn>
-          <UserButton>
+          {/* <UserButton>
 
-          </UserButton>
-          <li className='text-3xl font-[Syne] text-white cursor-pointer'onClick={handleClick}>Book Now</li>
+          </UserButton> */}
+          
+          <li className='text-2xl font-[Syne] text-white cursor-pointer'onClick={handleClick}>Book Now</li>
+          {/* <li className='md:text-2xl text-lg font-[Syne] text-white cursor-pointer'onClick={() =>  nav("/bestones")}>Our Collections</li> */}
+         
         </SignedIn>
       </ul>
 

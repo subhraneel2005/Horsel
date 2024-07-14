@@ -8,6 +8,10 @@ function Herosection() {
     <div>
     <Navbarr/>
     <CenteredTextWithVideo/>
+    <div className='bg-transparent h-screen w-full'>
+
+    </div>
+    <BestOnes/>
     </div>
   )
 }
