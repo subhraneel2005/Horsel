@@ -66,7 +66,7 @@ function BookNow() {
 
     if (!user) {
         return (
-            <div className='booknow min-h-screen w-full flex justify-center items-center flex-col space-y-7'>
+            <div className='bg-[#f5f5f5] min-h-screen w-full flex justify-center items-center flex-col space-y-7'>
                 <h1 className='text-7xl font-[Syne]'>Not logged in</h1>
                 <SignInButton>
                     <button className='font-[Harmony] bg-black text-white bg-opacity-70 px-7 py-3 rounded-lg'>Login</button>
@@ -88,17 +88,18 @@ function BookNow() {
                 draggable
                 pauseOnHover
                 theme="dark"
-                transition: Slide
-                />
-            <h1 className='py-14 font-[Harmony] text-[72px] font-[500] leading-[80px] text-center'>Booking Page</h1>
+                transition:Slide
+            />
+            <h1 className='pt-5 font-[Harmony] text-6xl font-[500] leading-[80px] text-center'>Booking Page</h1>
             <div className='w-full h-full flex justify-center items-center'>
                 <div className='grid grid-cols-1 md:grid-cols-2 px-4 py-10 gap-6'>
                     <div className='shadow-lg bookBox1 flex flex-col justify-center items-center'>
                         <h2 className='subHeadings w-full mb-5 px-7'>Selected Horse</h2>
                         <div className='grid grid-cols-2 gap-4'>
                             {['Horse1', 'Horse2', 'Horse3', 'Horse4'].map(horse => (
-                                <label key={horse} className='rounded-lg gap-2 smallBox flex justify-center items-center'>
+                                <label key={horse} className='rounded-sm gap-2 smallBox flex items-center'>
                                     <input
+                                        className='ml-2'
                                         type='radio'
                                         name='horse'
                                         value={horse}
@@ -112,25 +113,29 @@ function BookNow() {
                     <div className='shadow-lg bookBox1 flex flex-col justify-center items-center'>
                         <h2 className='subHeadings w-full mb-5 px-7'>Personal Info</h2>
                         <div className='grid grid-cols-2 gap-4'>
-                            <input type='text' name='name' className='rounded-lg outline-none border-none smallBox flex px-3 justify-center items-center' placeholder='Name' onChange={handleInputChange} />
-                            <input type='text' name='email' className='rounded-lg px-3 smallBox outline-none border-none flex justify-center items-center' placeholder='Email' onChange={handleInputChange} />
-                            <input type='text' name='phone' className='rounded-lg px-3 smallBox flex justify-center outline-none border-none items-center' placeholder='Phone No.' onChange={handleInputChange} />
-                            <input type='text' name='altPhone' className='px-3 outline-none border-none rounded-lg smallBox flex justify-center items-center' placeholder='Alternate Phone No.' onChange={handleInputChange} />
+                            <input className='rounded-sm outline-none border-none smallBox2 pl-3' type='text' name='name' placeholder='Name' onChange={handleInputChange} />
+                            <input type='text' name='email' className='rounded-sm smallBox2 outline-none border-none pl-3' placeholder='Email' onChange={handleInputChange} />
+                            <input type='text' name='phone' className='rounded-sm smallBox2 outline-none border-none pl-3' placeholder='Phone No.' onChange={handleInputChange} />
+                            <input type='text' name='altPhone' className=' outline-none border-none rounded-sm smallBox2 pl-3' placeholder='Alternate Phone No.' onChange={handleInputChange} />
                         </div>
                     </div>
-                    <div className='bookBox3 shadow-lg flex justify-center items-center'>
-                        <LocalizationProvider dateAdapter={AdapterDayjs}>
-                            <DemoContainer components={['DateCalendar', 'DateCalendar']}>
-                                <DemoItem>
-                                    <DateCalendar value={value} onChange={handleDateChange} />
-                                </DemoItem>
-                            </DemoContainer>
-                        </LocalizationProvider>
+                    <div className='bookBox3 shadow-lg flex-col'>
+                        <h2 className='subHeadings w-full mb-5 px-7 pt-7'>Select Date</h2>
+                        <div className='w-full'>
+                            <LocalizationProvider dateAdapter={AdapterDayjs}>
+                                <DemoContainer components={['DateCalendar', 'DateCalendar']}>
+                                    <DemoItem>
+                                        <DateCalendar value={value} onChange={handleDateChange} />
+                                    </DemoItem>
+                                </DemoContainer>
+                            </LocalizationProvider>
+                        </div>
+
                     </div>
                     <div className='flex flex-col justify-center items-center'>
-                        <div className='bookBox4 shadow-lg flex flex-col justify-center items-center'>
-                            <h2 className='subHeadings w-full mb-5 px-7'>Select Slot</h2>
-                            <div className='grid grid-cols-3 gap-6'>
+                        <div className='bookBox4 shadow-lg flex flex-col items-center'>
+                            <h2 className='subHeadings w-full mb-5 px-7 pt-7'>Select Slot</h2>
+                            <div className='grid grid-cols-3 gap-9'>
                                 {times.map((time) => (
                                     <div
                                         key={time.time}
