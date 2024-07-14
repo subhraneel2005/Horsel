@@ -5,67 +5,72 @@
 @tailwind components;
 @tailwind utilities;
 
-.booknow{
-    background: #F5F5F5;
-  }
-  .bookBox1{
-    background: #F5E8E1;
-    width: 477px;
-    height: 228px;
-    border-radius: 5px;
-    align-self: center;
+.bookBox1 {
+  background: #f5e8e1;
+  width: 477px;
+  height: 228px;
+  border-radius: 5px;
+  align-self: center;
   justify-self: center;
-  }
-  .bookBox2{
-    background: #F5E8E1;
-    width: 477px;
-    height: 228px;
-    border-radius: 5px;
-    align-self: center;
+}
+.bookBox2 {
+  background: #f5e8e1;
+  width: 477px;
+  height: 228px;
+  border-radius: 5px;
+  align-self: center;
   justify-self: center;
-  }
-  .bookBox3{
-    background: #F5E8E1;
-    width: 477px;
-    height: 523px;
-    border-radius: 5px;
-    align-self: center;
+}
+.bookBox3 {
+  background: #f5e8e1;
+  width: 477px;
+  height: 472px;
+  border-radius: 5px;
+  align-self: center;
   justify-self: center;
-  }
-  .bookButton{
-    background: #8B4513;
-    width: 477px;
-    height: 60px;
-    border-radius: 5px;
-  }
-  .bookBox4{
-    background: #F5E8E1;
-    width: 477px;
-    height: 423px;
-    border-radius: 5px;
-  }
-  .smallBox{
-    background: #C0713E;
-    width: 200px;
-    height: 55px;
-    padding: 6px;
-    color: white;
-  }
+}
+.bookButton {
+  background: #8b4513;
+  width: 477px;
+  height: 60px;
+  border-radius: 5px;
+}
+.bookBox4 {
+  background: #f5e8e1;
+  width: 477px;
+  height: 370px;
+  border-radius: 5px;
+}
+.smallBox {
+  background: #c0713e;
+  width: 200px;
+  height: 55px;
+  padding: 6px;
+  color: white;
+}
+.smallBox2 {
+  background: #c0713e;
+  width: 200px;
+  height: 55px;
+  color: white;
+}
+.smallBox2::placeholder {
+  color: white;
+}
 
-  .smallBox::placeholder{
-    color: white;
-  }
-  .subHeadings{
-    font-size: 32px;
-    font-weight: 500;
-    font-family: 'Syne', sans-serif;
-    line-height: 38.4px;
+.subHeadings {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Syne", sans-serif;
+  line-height: 38.4px;
+}
 
-  }
-
-  /* Mobile styles (max-width: 768px) */
+/* Mobile styles (max-width: 768px) */
 @media only screen and (max-width: 768px) {
-  .bookBox1, .bookBox2, .bookBox3, .bookBox4 {
+  .bookBox1,
+  .bookBox2,
+  .bookBox3,
+  .bookBox4 {
     width: 90%; /* adjust width to 90% of screen width */
     padding: 10px; /* adjust height to auto */
     padding-bottom: 6px;
@@ -74,21 +79,11 @@
     width: 130px;
     height: 55px;
   }
-  .bookButton{
+  .bookButton {
     width: 90%;
   }
 }
 
-.wrapper{
+.wrapper {
   margin: auto;
-}
-
-
-.bestOnes{
-  background: #faf3f0;
-}
-
-.bestOnes h1{
-  font-weight: 500;
-  line-height: 80px;
 }

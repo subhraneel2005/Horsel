@@ -6,12 +6,11 @@ import BestOnes from './BestOnes'
 function Herosection() {
   return (
     <div>
-    <Navbarr/>
-    <CenteredTextWithVideo/>
-    <div className='bg-transparent h-screen w-full'>
-
-    </div>
-    <BestOnes/>
+      <Navbarr />
+      <div className='h-screen w-full'>
+        <CenteredTextWithVideo />
+      </div>
+      <BestOnes />
     </div>
   )
 }
