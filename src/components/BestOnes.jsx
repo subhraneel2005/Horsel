@@ -30,7 +30,7 @@ function BestOnes() {
 
   return (
     <div className='bestOnes min-h-screen overflow-hidden w-full flex justify-center items-center flex-col select-none'>
-      <h1 className='text-center mt-6 font-[Harmony] text-5xl md:text-8xl'>Our Best Ones</h1>
+      <h1 className='text-center md:mt-24 mt-10 font-[Harmony] text-5xl md:text-8xl'>Our Best Ones</h1>
       <div className='flex items-center mt-20 gap-4 md:gap-6'>
         <FaArrowLeft 
           size={30} 
