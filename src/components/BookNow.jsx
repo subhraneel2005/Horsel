@@ -7,22 +7,16 @@ import { DateCalendar } from '@mui/x-date-pickers/DateCalendar';
 import { useUser } from "@clerk/clerk-react";
 import { SignInButton } from "@clerk/clerk-react";
 import { ToastContainer, toast } from 'react-toastify';
+import { useDispatch, useSelector } from 'react-redux';
+import { updateFormData } from '../features/data/dataSplice';
 import 'react-toastify/dist/ReactToastify.css';
 
 function BookNow() {
-
     const { user } = useUser();
+    const dispatch = useDispatch();
+    const formData = useSelector(state => state.data.formData);
 
     const [value, setValue] = useState(dayjs('2024-07-01'));
-    const [formData, setFormData] = useState({
-        horse: '',
-        slot: '',
-        name: '',
-        email: '',
-        phone: '',
-        altPhone: '',
-        date: value
-    });
 
     const times = [
         { time: "3:00 PM" },
@@ -38,30 +32,21 @@ function BookNow() {
 
     const handleInputChange = (e) => {
         const { name, value } = e.target;
-        setFormData({
-            ...formData,
-            [name]: value
-        });
+        dispatch(updateFormData({ [name]: value }));
     };
 
     const handleSlotClick = (slot) => {
-        setFormData({
-            ...formData,
-            slot: slot
-        });
+        dispatch(updateFormData({ slot }));
     };
 
     const handleDateChange = (newValue) => {
         setValue(newValue);
-        setFormData({
-            ...formData,
-            date: newValue
-        });
+        dispatch(updateFormData({ date: newValue }));
     };
 
     const handleSubmit = () => {
         console.log(formData);
-        toast(`Thankyou for Booking ${formData.horse}, ${user.firstName}`)
+        toast(`Thank you for Booking ${formData.horse}, ${user.firstName}`);
     };
 
     if (!user) {
@@ -130,7 +115,6 @@ function BookNow() {
                                 </DemoContainer>
                             </LocalizationProvider>
                         </div>
-
                     </div>
                     <div className='flex flex-col justify-center items-center'>
                         <div className='bookBox4 shadow-lg flex flex-col items-center'>
