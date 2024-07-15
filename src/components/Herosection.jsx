@@ -7,7 +7,7 @@ import Cursor from './Cursor'
 
 function Herosection() {
   return (
-    <div>
+    <div className='cursor-none'>
       <Navbarr />
       <div className='h-screen w-full'>
         <CenteredTextWithVideo />
