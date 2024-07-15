@@ -14,8 +14,8 @@ const CenteredTextWithVideo = () => {
         <source src="/bgVideo.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      <div className="absolute top-[50%] left-[50%] -translate-x-1/2 text-white text-center z-10 mt-28">
-        <h1 className=' text-7xl md:text-9xl text-center font-[Harmony]'>Horsel</h1>
+      <div className="absolute md:top-[50%] top-[30%] left-[50%] -translate-x-1/2 text-white text-center z-10 mt-28">
+        <h1 className=' text-8xl md:text-9xl text-center font-[Harmony]'>Horsel</h1>
         <p className='text-[10px] md:text-sm mr-0 font-[Syne] text-right '>Tailored Stables Effortless Reservations</p>
       </div>
     </div>
