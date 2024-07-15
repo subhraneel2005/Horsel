@@ -48,12 +48,7 @@
   padding: 6px;
   color: white;
 }
-.smallBox2 {
-  background: #c0713e;
-  width: 200px;
-  height: 55px;
-  color: white;
-}
+
 .smallBox2::placeholder {
   color: white;
 }
