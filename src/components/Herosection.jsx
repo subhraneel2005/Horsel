@@ -2,6 +2,7 @@ import React from 'react'
 import CenteredTextWithVideo from './CenteredTextWithVIdeo'
 import Navbarr from './Navbarr'
 import BestOnes from './BestOnes'
+import FloatingCircle from './FloatingCircle'
 
 function Herosection() {
   return (
@@ -9,6 +10,7 @@ function Herosection() {
       <Navbarr />
       <div className='h-screen w-full'>
         <CenteredTextWithVideo />
+        <FloatingCircle />
       </div>
       <BestOnes />
     </div>
