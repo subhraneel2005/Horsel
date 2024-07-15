@@ -30,7 +30,7 @@ function BestOnes() {
   });
 
   return (
-    <div className='bg-[#F5E8E1] h-screen overflow-hidden w-full flex justify-center items-center flex-col select-none relative' >
+    <div id='bestOnes' className='bg-[#F5E8E1] h-screen overflow-hidden w-full flex justify-center items-center flex-col select-none relative' >
       <h1 className='absolute top-8 font text-center font-[Harmony] text-5xl md:text-6xl'>Our Best Ones</h1>
       <div className='flex justify-center items-center w-full mt-20 gap-4 md:gap-6'>
         <FaArrowLeft
