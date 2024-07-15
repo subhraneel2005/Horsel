@@ -3,6 +3,7 @@ import CenteredTextWithVideo from './CenteredTextWithVIdeo'
 import Navbarr from './Navbarr'
 import BestOnes from './BestOnes'
 import FloatingCircle from './FloatingCircle'
+import Cursor from './Cursor'
 
 function Herosection() {
   return (
@@ -13,6 +14,7 @@ function Herosection() {
         <FloatingCircle />
       </div>
       <BestOnes />
+      <Cursor />
     </div>
   )
 }
