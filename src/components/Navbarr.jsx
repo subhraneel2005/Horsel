@@ -13,7 +13,7 @@ function Navbarr() {
 
     <div className='absolute select-none bg-transparent px-10 py-7 w-full' style={{ color: "#000" }}>
       <ul className='flex justify-between'>
-        <li className='text-3xl font-[Harmony] text-white cursor-pointer'>Horsel</li>
+        <li className=' text-xl md:text-3xl font-[Harmony] text-white cursor-pointer'>Horsel</li>
         {/* <li className='text-3xl font-[Syne] text-white cursor-pointer'>Login</li> */}
         <SignedOut>
           <SignInButton>
@@ -25,7 +25,7 @@ function Navbarr() {
 
           </UserButton> */}
 
-          <li className='text-2xl font-[Syne] text-white cursor-pointer' onClick={handleClick}>Book Now</li>
+          <li className=' text-xl md:text-2xl font-[Syne] text-white cursor-pointer' onClick={handleClick}>Book Now</li>
           {/* <li className='md:text-2xl text-lg font-[Syne] text-white cursor-pointer'onClick={() =>  nav("/bestones")}>Our Collections</li> */}
 
         </SignedIn>
