@@ -9,7 +9,7 @@ const FloatingCircle = () => {
   };
 
   return (
-    <div onClick={handleScroll} className='cursor-pointer absolute w-[100px] h-[100px] flex justify-center items-center right-20 bottom-20'>
+    <div onClick={handleScroll} className='cursor-pointer absolute md:mt-0 mt-32 md:w-[100px] md:h-[100px] flex justify-center items-center right-20 bottom-20 w-[80px] h-[80px] '>
       <div className='w-full h-full bg-red-500 rounded-full'></div>
       <svg width="140" height="140" viewBox="0 0 140 140" className="absolute">
         <path id="circlePath" d="
