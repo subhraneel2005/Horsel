@@ -2,8 +2,9 @@ import React, { useState, useEffect } from 'react';
 import { FaArrowRight, FaArrowLeft } from 'react-icons/fa';
 import { useSwipeable } from 'react-swipeable';
 
+const images = ['/horse1.jpg', '/horse2.jpg', '/horse3.jpg', '/horse4.jpg'];
+
 function BestOnes() {
-  const images = ['/horse1.jpg', '/horse2.jpg', '/horse3.jpg', '/horse4.jpg'];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   useEffect(() => {
@@ -11,7 +12,7 @@ function BestOnes() {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
     }, 20000); // Change image every 7 seconds
     return () => clearInterval(interval);
-  }, [images.length]);
+  }, []);
 
   const prevImage = () => {
     setCurrentIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
