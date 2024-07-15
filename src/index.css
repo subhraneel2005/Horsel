@@ -71,8 +71,14 @@
     padding-bottom: 6px;
   }
   .smallBox {
-    width: 130px;
+    width: 110px;
     height: 55px;
+  }
+  .smallBox2 {
+    background: #c0713e;
+    width: 110px;
+    height: 55px;
+    color: white;
   }
   .bookButton {
     width: 90%;
